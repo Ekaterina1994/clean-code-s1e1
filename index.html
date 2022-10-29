@@ -6,67 +6,67 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <header class="aaa">
-      <h1><img class="aaa-img" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix"></h1>
+    <header class="header">
+      <h1><img class="header__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix"></h1>
       <a 
-        class="more_inf"
+        class="header__link"
         href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?
       </a>
     </header>
-    <main class="centered-main-page-element">
-      <section id="topSectionForAddingElementToList">
-        <h2 class="label label-new-task">Add Item</h2>
-        <div class="task-row-wrapper">
+    <main class="main">
+      <section class="add-task">
+        <h2 class="add-task__title">Add Item</h2>
+        <div class="add-task__content">
           <input 
-            id="new-task"
-            class=" input input-text task" 
+            id="add-task"
+            class="task input-text add-task__input"
             type="text">
-          <button class="button">Add</button>
+          <button class="button add-task__button">Add</button>
         </div>
       </section>
-      <section>
-      <h2 class="title">Todo</h2>
-      <ul class="list" id="incompleteTasks">
-        <li class="li-style">
-          <input class="input input-checkbox" type="checkbox">
-          <label class="label task">Pay Bills</label>
+      <section class="todo-tasks">
+      <h2 class="todo-tasks__title">Todo</h2>
+      <ul class="todo-tasks__list" id="todo-tasks">
+        <li class="list-item">
+          <input class="input-checkbox list-item__input" type="checkbox">
+          <label class="label task list-item__label">Pay Bills</label>
           <input 
             type="text" 
-            class="input input-text task">
-          <button class="button edit">Edit</button>
-          <button class="button delete">
-            <img class="button-img" src="./remove.svg" alt="Delete button">
+            class="input-text task list-item__input">
+          <button class="button button-edit">Edit</button>
+          <button class="button button-delete">
+            <img class="list-item__button-img" src="./remove.svg" alt="Delete button">
           </button>
         </li>
-        <li class=" li-style editMode">
-          <input class="input input-checkbox" type="checkbox">
+        <li class="list-item edit-mode">
+          <input class="input-checkbox" type="checkbox">
           <label class="label task">Go Shopping</label>
           <input 
             type="text"
             value="Go Shopping"
-            class="input input-text task">
-          <button class="button edit">Save</button>
-          <button class="button delete">
-            <img class="button-img" src="./remove.svg" alt="Delete button">
+            class="input-text task">
+          <button class="button button-edit">Save</button>
+          <button class="button button-delete">
+            <img class="list-item__button-img" src="./remove.svg" alt="Delete button">
           </button>
         </li>
       </ul>
       </section>
-      <section>
-      <h2 class="title">Completed</h2>
-      <ul class="list" id="completed-tasks">
-        <li class="li-style">
+      <section class="completed-tasks">
+      <h2 class="completed-tasks__title">Completed</h2>
+      <ul class="completed-tasks__list" id="completed-tasks">
+        <li class="list-item">
           <input 
-            class="input input-checkbox"
+            class="input-checkbox"
             type="checkbox" 
             checked>
           <label class="label task">See the Doctor</label>
           <input 
             type="text" 
-            class="input input-text task">
-          <button class="button edit">Edit</button>
-          <button class="button delete">
-            <img class="button-img" src="./remove.svg" alt="Delete button">
+            class="input-text task">
+          <button class="button button-edit">Edit</button>
+          <button class="button button-delete">
+            <img class="list-item__button-img" src="./remove.svg" alt="Delete button">
           </button>
         </li>
       </ul>

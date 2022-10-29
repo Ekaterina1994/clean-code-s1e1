@@ -6,61 +6,59 @@
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa-img {
+.header__image {
   width: 100%;
 }
 
-.aaa .more_inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .aaa {
+  .header {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
 .task {
+  outline: none;
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-task__content {
   display: flex;
 }
 
-.list {
+.todo-tasks__list,
+.completed-tasks__list {
   margin: 0;
   padding: 0px;
 }
 
-.li-style,
+.list-item,
 .title {
   list-style: none;
 }
 
-.input,
 .button {
   outline: none;
-}
-
-.button {
   background: none;
   border: 0px;
   color: #888;
@@ -70,15 +68,15 @@
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 
 /* Heading */
 
-.title,
-.label-new-task {
+.todo-tasks__title,
+.completed-tasks__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -108,19 +106,26 @@ button:hover {
 
 /* New Task */
 
-.label-new-task {
+.add-task__title {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
   display: block;
   margin: 0 0 20px;
 }
 
-.input#new-task {
+#new-task {
   width: 318px;
 }
 
 
 /* Task list */
 
-.li-style {
+.list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -129,32 +134,28 @@ button:hover {
   align-items: center;
 }
 
-.li-style > * {
-  vertical-align: middle;
-}
-
-.li-style > .input-checkbox {
+.input-checkbox {
   margin: 0 10px;
 }
 
-.li-style > .label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.li-style > .input-text {
+.input-text {
   width: 226px;
 }
 
-.delete .button-img {
+.button-delete .list-item__button-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete .button-img:hover {
+.button-delete .list-item__button-img:hover {
   transform: rotateZ(0);
 }
 
@@ -169,15 +170,15 @@ button:hover {
 
 /* Edit Task */
 
-.list .li-style .input-text {
+.list-item .input-text {
   display: none;
 }
 
-.list .li-style.editMode .input-text {
+.edit-mode .input-text {
   display: inline-block;
   width: 224px;
 }
 
-.list .li-style.editMode .label {
+.edit-mode .label {
   display: none;
 }
